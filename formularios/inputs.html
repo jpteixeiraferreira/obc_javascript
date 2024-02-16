@@ -5,23 +5,33 @@
     <body>
         <h1>Inputs no HTML</h1>
         <form> 
+
+            <!-- Input de texto simples-->
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="name" >
             <br><br>
+
+            <!-- Input de email -->
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name = "email" >
+            <input type="email" id="email" name = "email" placeholder="Ex: maria@email.com">
             <br><br>
+
+            <!-- Input de senha -->
             <label for="pass">Senha:</label>
             <input type="password" id="password" name="password" >
             <br><br>
             <label>Sexo</label>
             <br>
+
+            <!-- Campo de caixa de seleção por radio (bolinha) -->
             <input type="radio" name="sexo" id = "m" value="m"> 
             <label for="m">Masculino</label>
             <input type="radio" name="sexo" id="f" value="f">
             <label for="f">Feminino</label>
             <br><br>
 
+
+            <!-- Campo de seleção por checkbox -->
             <label>Interesses:</label> <br>
             
             <input type="checkbox" name = "interesses" value="frontend" id="frontend">
@@ -36,13 +46,35 @@
             <input type="checkbox" name = "interesses" value="web" id="web">
             <label for="web"> Web</label>
             <br><br>
+            <!-- Campo de data -->
             <label for = "data">Data:</label>
             <input type="date" name = "data" id = "data" required>
             <br><br>
 
+            <!-- Campo de escolha de arquivo -->
             <label for="profilephoto">Foto de perfil:</label>
             <input type="file" name="profilephoto" id="profilephoto">
             <br><br>
+
+
+            <!-- Campo de caixa de seleção -->
+            <label for="situacao">Situação atual:</label>
+            <select name="situacao" id="situacao" value = "desempregado" required >
+                <option value="" disabled selected> Selecione uma opção</option>
+                <option value="estudante"> Estudante</option>
+                <option value="desempregado"> Desempregado</option>
+                <option value="trabalhando"> Trabalhando</option>
+            </select>
+            <br><br>
+
+            <!-- Campo de área de texto de múltiplas linhas-->
+            <label for="sobre"> Sobre mim:</label>
+            <textarea name="sobre" id="sobre"></textarea>
+
+
+
+            <br><br>
+            <!-- Botão de enviar -->
             <button type="submit">Enviar</button>
         </form>
     </body>
